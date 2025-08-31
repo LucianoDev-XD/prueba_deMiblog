@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src: url(/src/assets/font/Roboto_Mono/static/RobotoMono-Bold.ttf);
+    font-weight:bold;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'Playwrite';
+    src: url(/src/assets/font/Playwrite_DE_Grund/static/PlaywriteDEGrund-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*PIE DE PAGINA*/
+
+footer{
+    background: #696969;
+    color: #c4c1c1;
+    font-family: "RobotoMono";
+    font-size: 0.8rem;
+    border-top: 1px solid black;
+}
+
+.footer_Superior{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_Superior > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    margin: 15px;
+    height: 40px;
+    width: 100%;
+}
+
+#copy{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    padding-bottom: 15px;
+}

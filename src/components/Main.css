@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src: url(/src/assets/font/Roboto_Mono/static/RobotoMono-Bold.ttf);
+    font-weight:bold;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'Playwrite';
+    src: url(/src/assets/font/Playwrite_DE_Grund/static/PlaywriteDEGrund-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*CUERPO DE LA WEB*/
+
+main{
+    background: #f0f0f0;
+    padding: 40px 20px;
+    margin-top: 140px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*ARTICULOS*/
+article{
+    max-width: 900px;
+    margin: 5px auto;
+    padding: 40px 0;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 2px cornflowerblue;
+}
+
+article p{
+    font-size: 18px;
+}
+
+article h3{
+    font-size: 1.5rem;
+    display: flex;
+    margin-bottom: 0;
+    text-align: start;
+}
+
+
+/*PRIMER ARTICULO*/
+
+.presentacion{
+    font-family: "Playwrite";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+.presentacion h2{
+    font-size: 1.4rem;
+}
+
+.presentacion  p{
+    font-size: 1.2rem;
+    display: flex;
+    margin-top: 1px;
+    padding: 0 25px;
+    justify-content:baseline;
+}
+
+#haruSaludo{
+    width: 220px;
+    border-radius: 15px;
+    border: 4px solid  rgb(255, 182, 186);;
+    margin-bottom: 15px;
+}
+
+/*VER MAS*/
+
+#VerMas_SobreMi{
+    color: #0084f8;
+    font-family: "RobotoMono";
+    font-size: 1.2rem;
+}
+
+#VerMas_SobreMi:hover{
+    color: #0084f8;
+    font-family: "RobotoMono";
+    font-size: 1.2rem;
+    transform: scale(1.1);
+    transition: all 300ms ease;
+}
+
+#VerMas_SobreMi:hover #raya{
+    padding-left: 15px;
+    color: #0084f8;
+    font-family: "RobotoMono";
+    font-size: 1.2rem;
+    transform: scale(1.1);
+    transition: all 300ms ease;
+}
+
+/*SEPARADOR*/
+#banner_recomendacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 15px 0 15px;
+    text-align: start;
+    border-radius: 0;
+    background-color: #58b1ff;
+    font-family: "RobotoMono";
+}
+
+#banner_recomendacion p{
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 4px 0;
+    margin: 0;
+    text-align: center;
+}
+/*SEGUNDO ARTICULO*/
+
+.Musica{
+    display: flex;
+    flex-direction: column;
+    background: #0d518d;
+    color: #FFFFFF;
+    padding: 15px;
+    margin-bottom: 0;
+    font-family: "Playwrite";
+}
+
+.Musica p{
+    margin: 0;
+    margin-bottom: 4px;
+    font-size: 1.2rem;
+}
+
+#Ado{
+    font-family: "RobotoMono";
+    color: #58b1ff;
+    font-size: 1.4rem;
+}
+
+
+/*SIGNIFICADO DE UTAITE*/
+.tooltip {
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+.tooltip > .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 6px;
+    font-size: 0.85em;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+  
+.tooltip:hover > .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    background-image: url(../assets/advertencia.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 25px;
+    padding-left: 30px;
+}
+
+/*API DE SPOTIFY*/
+.spotify{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px;
+}
+
+.spotify iframe {
+    border-radius: 0;
+    border: 4px solid  rgb(35, 112, 175);
+}

@@ -1,0 +1,18 @@
+:root {
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: #f0f0f0;
+}
+
+
+
+html{
+  font-size: 16px
+}
+
+html, body {
+  overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal */
+  margin: 0;
+  padding: 0;
+}

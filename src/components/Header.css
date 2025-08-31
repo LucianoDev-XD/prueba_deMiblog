@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src: url(/src/assets/font/Roboto_Mono/static/RobotoMono-Bold.ttf);
+    font-weight:bold;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'Playwrite';
+    src: url(/src/assets/font/Playwrite_DE_Grund/static/PlaywriteDEGrund-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*CABECERA*/
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: cornflowerblue;
+    z-index: 20;
+}
+
+/*HEADER SUPERIOR*/
+
+.header_superior{
+    max-width: 1200px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 35px;
+    font-size: 1.2rem;
+    font-style: bold;
+    font-family: "RobotoMono";
+}
+
+/*BARRA MENU*/
+
+.barra-navegacion{
+    background-color: #E0F6FF;
+    width: 100%;
+    height: 60px;
+    padding: 0px 20px;
+    border-bottom: 1px solid #b2c5cc;
+    font-family: "RobotoMono";
+    
+}
+
+.menu{
+    max-width: 800px;
+    margin: auto;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+nav > ul{
+    height: 100%;
+    display: flex;
+}
+
+nav  ul  li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav > ul > li:first-child > a{
+    background-image: url(../assets/home.png);
+    background-size: 34px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 40px;    
+}
+
+nav > ul > li:first-child:hover > a{
+    background-image: url(../assets/home.png);
+    background-size: 44px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: all 300ms ease;
+}
+
+nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background: #1E96FF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#selected{
+    transform: scale(1.1);
+    background-color: #1E96FF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/*SUBMENU*/
+
+nav ul li ul{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 90px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+
+nav ul li ul::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+
+nav ul li ul li a{
+    display: block;
+    color: #1E96FF;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+
+nav ul li ul li a:hover{
+    background: #0084f8;
+    color:#FFFFFF;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}

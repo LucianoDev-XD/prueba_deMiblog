@@ -1,0 +1,25 @@
+/* Importar estilos globales */
+@import './components/Header.css';
+@import './components/Main.css';
+@import './components/Footer.css';
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+*{
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html{
+  font-size: 16px
+}
+
+html, body {
+  overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal */
+  margin: 0;
+  padding: 0;
+}
