@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/prueba_deMiblog/static/css/main.0365361d.css",
+    "main.js": "/prueba_deMiblog/static/js/main.bee59786.js",
+    "static/media/haruxd.png": "/prueba_deMiblog/static/media/haruxd.b8850a79144b1ac5d139.png",
+    "static/media/PlaywriteDEGrund-Regular.ttf": "/prueba_deMiblog/static/media/PlaywriteDEGrund-Regular.990a690b41741f1edfca.ttf",
+    "static/media/RobotoMono-Bold.ttf": "/prueba_deMiblog/static/media/RobotoMono-Bold.1669b18947f3b1625bcc.ttf",
+    "static/media/home.png": "/prueba_deMiblog/static/media/home.da402864bfa9cc2154f0.png",
+    "static/media/advertencia.png": "/prueba_deMiblog/static/media/advertencia.384e026b3aba041c72f3.png",
+    "index.html": "/prueba_deMiblog/index.html",
+    "main.0365361d.css.map": "/prueba_deMiblog/static/css/main.0365361d.css.map",
+    "main.bee59786.js.map": "/prueba_deMiblog/static/js/main.bee59786.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0365361d.css",
+    "static/js/main.bee59786.js"
+  ]
+}
