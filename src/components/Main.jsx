@@ -1,12 +1,13 @@
 import React from 'react';
 import './Main.css';
+import logo from '../assets/images/haruxd.png';
 
 const Main = () => {
   return (
     <main>
       <article className="presentacion">
         <h2>Bienvenidos a Todos!</h2>
-        <img id="haruSaludo" src="/src/assets/images/haruurara.jpg" alt="Haru urara saludando" />
+        <img id="haruSaludo" src={logo} alt="Haru urara saludando" />
         <p>
           Esta es mi Web Principal (algo así como un portal a todo mi contenido) donde tengo planeado compartir contenido de todo un poco ya sea consejos,
           código para que puedas implementar en tu Web, avances de algún proyecto en producción (Web, Aplicación, Juego, etc) o tan solo compartir mis avances en este increíble Mundo de la Programación.
