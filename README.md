@@ -2,4 +2,4 @@
 
 ¿Que es?
 
-Es una pequeño web de uso personal en la usare para practicar codigo html, css y React!
+Es una pequeño web de uso personal en la que usare para practicar codigo html, css y React!
