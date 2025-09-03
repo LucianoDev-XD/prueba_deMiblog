@@ -24,7 +24,7 @@ main{
 article{
     max-width: 900px;
     margin: 5px auto;
-    padding: 40px 0;
+    padding: 15px 0;
     background: #ffffff;
     border-radius: 5px;
     box-shadow: 0px 0px 1px 2px cornflowerblue;
@@ -34,10 +34,11 @@ article p{
     font-size: 18px;
 }
 
-article h3{
+article h2{
     font-size: 1.5rem;
     display: flex;
-    margin-bottom: 0;
+    margin: 0;
+    padding-bottom: 15px;
     text-align: start;
 }
 
@@ -133,6 +134,7 @@ article h3{
 .Musica p{
     margin: 0;
     margin-bottom: 4px;
+    margin-left: 23px;
     font-size: 1.2rem;
 }
 
@@ -140,40 +142,58 @@ article h3{
     font-family: "RobotoMono";
     color: #58b1ff;
     font-size: 1.4rem;
+    padding-right: 4px;
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el texto */
 }
 
 
 /*SIGNIFICADO DE UTAITE*/
 .tooltip {
-    position: relative;
-    cursor: pointer;
-    z-index: 10;
-  }
-  
-.tooltip > .tooltip-text {
-    visibility: hidden;
-    position: absolute;
-    background: #333;
-    color: #fff;
-    padding: 5px 8px;
-    border-radius: 6px;
-    font-size: 0.85em;
-    top: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    opacity: 0;
-    transition: opacity 0.2s ease;
+  position: absolute;
+  background: linear-gradient(135deg, #0d518d, #006dcc);
+  color: #fff;
+  border: 1px solid #003a6d;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  max-width: 300px;
+  text-align: center;
+  opacity: 0;
+  transition: all 300ms ease;
+  top: 139%; /* Posiciona el cuadro debajo del texto */
+  left: 55.5%; /* Centra el cuadro horizontalmente */
+  transform: translateX(-50%); /* Ajusta el centrado */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
-  
-.tooltip:hover > .tooltip-text {
-    visibility: visible;
-    opacity: 1;
-    background-image: url(../assets/advertencia.png);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 25px;
-    padding-left: 30px;
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: -20px; /* Posiciona la flecha justo encima del cuadro */
+  left: 50%;
+  transform: translateX(-60%);
+  border-width: 10px;
+  transition: all 300ms ease;
+  border-style: solid;
+  border-color: transparent transparent #0062b8 transparent; /* Flecha negra apuntando hacia arriba */
+}
+
+  /* Aplica la animación al mostrar el cuadro */
+.tooltip.expanded {
+  opacity: 1;
+  animation: fadeInUp 0.3s ease-out; /* Duración y tipo de animación */
+}
+
+/* Define la animación */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%); /* Comienza más abajo */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(-50%); /* Termina en su posición original */
+    }
 }
 
 /*API DE SPOTIFY*/
@@ -187,4 +207,136 @@ article h3{
 .spotify iframe {
     border-radius: 0;
     border: 4px solid  rgb(35, 112, 175);
+}
+
+@media (max-width: 768px) {
+
+    /*ARTICULOS*/
+
+article p{
+    font-size: 16px;
+}
+    
+article h2{
+    font-size: 1.2rem;
+    display: flex;
+    margin: 0;
+    padding-bottom: 15px;
+    text-align: start;
+}
+
+    /*PRIMER ARTICULO*/
+
+.presentacion  p{
+    font-size: 1rem;
+    display: flex;
+    margin-top: 1px;
+    padding: 0 25px;
+    justify-content:baseline;
+}
+
+/*VER MAS*/
+
+#VerMas_SobreMi{
+    color: #0084f8;
+    font-family: "RobotoMono";
+    font-size: 1rem;
+}
+
+#VerMas_SobreMi:hover{
+    color: #0084f8;
+    font-family: "RobotoMono";
+    font-size: 1rem;
+    transform: scale(1.1);
+    transition: all 300ms ease;
+}
+
+#VerMas_SobreMi:hover #raya{
+    padding-left: 15px;
+    color: #0084f8;
+    font-family: "RobotoMono";
+    font-size: 1rem;
+    transform: scale(1.1);
+    transition: all 300ms ease;
+}
+
+/*BANNER RECOMENDACION*/
+
+#banner_recomendacion p{
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 2px 0;
+    margin: 0;
+    text-align: center;
+}
+
+/*SEGUNDO ARTICULO*/
+
+.Musica p{
+    margin: 0;
+    margin-bottom: 4px;
+    margin-left: 23px;
+    font-size: 1rem;
+}
+
+#Ado{
+    font-family: "RobotoMono";
+    color: #58b1ff;
+    font-size: 1.2rem;
+}
+
+/*SIGNIFICADO DE UTAITE*/
+
+.tooltip {
+    position: absolute;
+    background: linear-gradient(135deg, #0d518d, #006dcc);
+    color: #fff;
+    border: 1px solid #003a6d;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    max-width: 300px;
+    text-align: center;
+    opacity: 0;
+    transition: all 300ms ease;
+    top: 81.5%; /* Posiciona el cuadro debajo del texto */
+    left: 59.9%; /* Centra el cuadro horizontalmente */
+    transform: translateX(-50%); /* Ajusta el centrado */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: -20px; /* Posiciona la flecha justo encima del cuadro */
+    left: 50%;
+    transform: translateX(-60%);
+    border-width: 10px;
+    transition: all 300ms ease;
+    border-style: solid;
+    border-color: transparent transparent #0062b8 transparent; /* Flecha negra apuntando hacia arriba */
+}
+  
+    /* Aplica la animación al mostrar el cuadro */
+.tooltip.expanded {
+    opacity: 1;
+    animation: fadeInUp 0.3s ease-out; /* Duración y tipo de animación */
+}
+  
+  /* Define la animación */
+
+@keyframes fadeInUp {
+
+0% {
+    opacity: 0;
+    transform: translateX(-50%); /* Comienza más abajo */
+}
+
+100% {
+    opacity: 1;
+    transform: translateX(-50%); /* Termina en su posición original */
+    }
+}
+
 }

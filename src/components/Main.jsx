@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Main.css';
 import logo from '../assets/images/haruxd.png';
 
 const Main = () => {
+  const [showTooltip, setShowTooltip] = useState(false);
+
+  const toggleTooltip = () => {
+    setShowTooltip((prev) => !prev);
+  };
+
   return (
     <main>
       <article className="presentacion">
@@ -22,9 +28,23 @@ const Main = () => {
       <br />
       <article className="Musica">
         <p>Un poco de música?</p>
-        <p>Aquí les comparto una pequeña Playlist de mi <span className="tooltip"><span id="Ado">Utaite</span>
-          <span className="tooltip-text">Es un término usado en Japón para referirse a los/as cantantes qué no muestran su rostro y no usan Vocaloid (sintetizadores de voz)</span></span> (cantante) favorita!
+        <p>
+          Aquí les comparto una pequeña Playlist de mi{' '} 
+          <span
+            id="Ado"
+            onClick={toggleTooltip}
+
+          >
+          Utaite 
+          </span>
+          (cantante) favorita!
         </p>
+        {showTooltip && (
+          <div className="tooltip expanded">
+            Es un término usado en Japón para referirse a los/as cantantes qué no
+            muestran su rostro y no usan Vocaloid (sintetizadores de voz)
+          </div>
+        )}
         <div className="spotify">
           <iframe
             style={{ borderRadius: '0px' }}
