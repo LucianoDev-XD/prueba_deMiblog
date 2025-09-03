@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/prueba_deMiblog/static/css/main.988d99b5.css",
+    "main.css": "/prueba_deMiblog/static/css/main.ed772c7f.css",
     "main.js": "/prueba_deMiblog/static/js/main.c242b8e5.js",
     "static/media/haruxd.png": "/prueba_deMiblog/static/media/haruxd.b8850a79144b1ac5d139.png",
     "static/media/PlaywriteDEGrund-Regular.ttf": "/prueba_deMiblog/static/media/PlaywriteDEGrund-Regular.990a690b41741f1edfca.ttf",
     "static/media/RobotoMono-Bold.ttf": "/prueba_deMiblog/static/media/RobotoMono-Bold.1669b18947f3b1625bcc.ttf",
     "static/media/home.png": "/prueba_deMiblog/static/media/home.da402864bfa9cc2154f0.png",
     "index.html": "/prueba_deMiblog/index.html",
-    "main.988d99b5.css.map": "/prueba_deMiblog/static/css/main.988d99b5.css.map",
+    "main.ed772c7f.css.map": "/prueba_deMiblog/static/css/main.ed772c7f.css.map",
     "main.c242b8e5.js.map": "/prueba_deMiblog/static/js/main.c242b8e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.988d99b5.css",
+    "static/css/main.ed772c7f.css",
     "static/js/main.c242b8e5.js"
   ]
 }
